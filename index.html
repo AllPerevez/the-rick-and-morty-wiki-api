@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Rick and Morty Wiki</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <h1 class="header__title">Rick and Morty Wiki</h1>
+        </div>
+        <div class="main-page">
+            <div class="search-container">
+                <h1 class="search__title">Search a character</h1>
+                <div class="search-box">
+                    <input class="search-input" type="text" name="name" placeholder="Search name ...">
+                    <div class="search-status-list">
+                        <input list="status-datalist" class="search-status" name="status" placeholder="Status" />
+                        <datalist id="status-datalist">
+                            <option value="alive"></option>
+                            <option value="dead"></option>
+                            <option value="unknown"></option>
+                        </datalist>
+                    </div>
+                    <div class="search-gender-list">
+                        <input list="gender-datalist" class="search-gender" name="gender" placeholder="Gender" />
+                        <datalist id="gender-datalist">
+                            <option value="female"></option>
+                            <option value="male"></option>
+                            <option value="genderless"></option>
+                            <option value="unknown"></option>
+                        </datalist>
+                    </div>
+                </div>
+                <input class="search-btn" type="button" value="Search">
+            </div>
+            <div class="characters-container">
+                <div class="characters-cards"></div>
+            </div>
+        </div>
+        <div class="pagination-container">
+            <h1 class="pagination__title">Pagination</h1>
+            <div class="pagination"></div>
+        </div>
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+
+</html>

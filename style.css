@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+
+:root {
+    --green-color: rgb(151, 206, 76);
+    --blue-color: rgb(53, 201, 221);
+    --white-color: rgb(255, 255, 255);
+    --red-color: rgb(221, 53, 53);
+    --grey-color: rgb(136, 136, 136);
+    --darkgrey-color: rgb(46, 46, 46);
+    --darkblue-color: rgb(2, 175, 197);
+    --orange-color: rgb(238, 137, 93);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Luckiest Guy", cursive;
+    font-weight: 600;
+    font-style: normal;
+}
+
+/* HEADER */
+
+.header__title {
+    text-transform: uppercase;
+    text-align: center;
+    background: rgb(0, 0, 0);
+    height: 3rem;
+    color: var(--blue-color);
+    -webkit-text-stroke: 1px var(--green-color);
+    text-shadow: 1px 0 10px var(--green-color);
+}
+
+/* MAIN CONTENT */
+
+.main-page {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* SEARCH CONTAINER*/
+
+.search__title {
+    margin: 10px;
+}
+
+.search-container {
+    margin: 2% 0;
+    text-align: center;
+}
+
+.search-box {
+    margin: auto;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    line-height: 1.5;
+}
+
+.search-input {
+    width: 20%;
+    padding: 0 2%;
+    border: 2px dotted var(--blue-color);
+    border-radius: 10px;
+}
+
+.search-status-list {
+    margin: 0 1%;
+}
+
+.search-status {
+    width: 100%;
+    padding: 5%;
+    border: 2px dotted var(--blue-color);
+    border-radius: 10px;
+}
+
+.search-gender {
+    width: 100%;
+    padding: 5%;
+    border: 2px dotted var(--blue-color);
+    border-radius: 10px;
+}
+
+.search-btn {
+    font-size: 1.1rem;
+    margin: 1% 0;
+    width: 10%;
+    padding: 1%;
+    border: 2px solid var(--green-color);
+    background: var(--white-color);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.search-btn:hover {
+    background: var(--blue-color);
+    color: var(--white-color);
+}
+
+/* CARDS */
+
+.characters-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.card {
+    margin: 2% 0;
+    border: 2px solid var(--green-color);
+    box-shadow: 1px 0 10px var(--blue-color);
+    border-radius: 10px;
+    overflow: hidden;
+    color: var(--white-color);
+    line-height: 1.3;
+    background: var(--darkblue-color);
+}
+
+.card-info {
+    padding: 10px 10px;
+    width: 290px;
+    position: relative;
+}
+
+.card__title {
+    font-size: 1.4rem;
+    width: 80%;
+    color: var(--green-color);
+}
+
+.status_alive,
+.status_dead,
+.status_unknown {
+    color: var(--white-color);
+    padding: 1px;
+    border-radius: 5px;
+    width: auto;
+    position: absolute;
+    top: 10%;
+    right: 0;
+    font-size: 0.8rem;
+}
+
+.status_alive {
+    background: var(--green-color);
+}
+
+.status_dead {
+    background: var(--red-color);
+}
+
+.status_unknown {
+    background: var(--grey-color);
+}
+
+.card__info:active,
+.card__info {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--white-color);
+    display: flex;
+    justify-content: center;
+    margin: 5% 0;
+    border: 2px solid var(--green-color);
+    background: var(--green-color);
+    border-radius: 10px;
+    font-weight: bold;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.card__info:hover {
+    color: var(--green-color);
+    background: var(--white-color);
+}
+
+/* PAGINATION */
+
+.pagination-container {
+    margin: 5% auto;
+    width: 90%;
+}
+
+.pagination__title {
+    text-align: center;
+    margin: 2% 0;
+}
+
+.pagination__list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.pagination__item {
+    list-style: none;
+    margin: 0 10px;
+    transition: color 0.2s ease-in-out;
+    font-size: 1.1rem;
+}
+
+.pagination__item_active,
+.pagination__item:hover {
+    list-style: none;
+    color: var(--green-color);
+}
+
+@media screen and (width < 900px) {
+    .search-box {
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    .search-input {
+        width: 100%;
+        padding: 3%;
+        margin: 1% 0;
+    }
+
+    .search-status,
+    .search-gender {
+        width: 100%;
+        padding: 3%;
+        margin: 1% 0;
+    }
+
+
+    .search-btn {
+        margin: 1% 0;
+        width: 40%;
+        padding: 1%;
+    }
+
+}
