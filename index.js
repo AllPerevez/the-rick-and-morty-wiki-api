@@ -1,3 +1,4 @@
+// Функция для создания запроса фильтрации
 function buildQuery(params) {
     const query = Object.keys(params)
         .map(key => `${key}=${params[key]}`)
