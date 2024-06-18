@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Grandstander:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
     --green-color: rgb(151, 206, 76);
@@ -15,9 +15,10 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: "Luckiest Guy", cursive;
-    font-weight: 600;
-    font-style: normal;
+    font-family: "Grandstander", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
 
 /* HEADER */
