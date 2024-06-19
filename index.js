@@ -70,6 +70,7 @@ async function main() {
             cardMoreInfo.classList.add('card__info');
             cardMoreInfo.href = url;
             cardMoreInfo.innerHTML = 'View Details ...';
+            cardMoreInfo.onclick = (e) => { e.preventDefault(); }
 
             cards.appendChild(card);
             card.appendChild(cardImg);
